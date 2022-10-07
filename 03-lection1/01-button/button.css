@@ -1,1 +1,90 @@
 /* Стилизация кнопки */
+.button {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    width: 185px;
+    height: 48px;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button__primary {
+    background: #4263EB;
+    color: white;
+    cursor: pointer;
+}
+
+    .button__primary:hover {
+        background: #2342C0;
+    }
+
+    .button__primary:active {
+        background: green;
+    }
+
+.button__primary_disabled {
+    background: #4263EB;
+    color: #FFFFFF;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.button__secondary {
+    background: #7048E8;
+    color: white;
+    cursor: pointer;
+}
+
+    .button__secondary:hover {
+        background: #5028C6;
+    }
+
+    .button__secondary:active {
+        background: red;
+    }
+
+.button__secondary_disabled {
+    background: #4263EB;
+    color: #FFFFFF;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.button__alternate {
+    background: #FFFFFF;
+    border: 1px solid #ACB5BD;
+    color: #495057;
+    cursor: pointer;
+}
+
+    .button__alternate:hover {
+        color: #495057;
+        border: 1px solid #212429;
+    }
+
+    .button__alternate:active {
+        background: yellow;
+    }
+
+.button__alternate_disabled {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    background: #FFFFFF;
+    border: 1px solid #ACB5BD;
+    color: #495057;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.body__button {
+    margin: 16px 0px 0px 20px;
+}
+
+.button-display {
+    display: inline-block;
+    width: 215px;
+} 
